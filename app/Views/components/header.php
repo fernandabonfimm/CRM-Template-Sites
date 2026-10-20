@@ -54,12 +54,12 @@ $courseCategories = [
                 <li><a href="https://www.ramagaproestetica.com.br/categoria-produto/produtos/">Loja virtual</a></li>
                 <li class="navigation-mobile-actions">
                     <a class="button button--dark" href="https://wa.me/5516981960027" target="_blank" rel="noopener noreferrer">Fale conosco <span aria-hidden="true">↗</span></a>
-                    <a class="button button--outline" href="/login/">Login do painel <span aria-hidden="true">↗</span></a>
+                    <a class="button button--outline" href="/painel/">Login do painel <span aria-hidden="true">↗</span></a>
                 </li>
             </ul>
         </nav>
         <div class="header-actions">
-            <a class="header-login" href="/login/">Login <span aria-hidden="true">↗</span></a>
+            <a class="header-login" href="/painel/">Login <span aria-hidden="true">↗</span></a>
             <a class="header-contact" href="https://wa.me/5516981960027" target="_blank" rel="noopener noreferrer">
                 Fale conosco <span aria-hidden="true">↗</span>
             </a>

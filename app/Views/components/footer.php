@@ -2,7 +2,7 @@
     <div class="site-footer__main section-shell">
         <div class="site-footer__brand">
             <a href="/" aria-label="Ràmaga — voltar ao início">
-                <img src="/assets/images/public/assets/images/LOGO-transparente.png" alt="Ràmaga Pró-Estética" width="213" height="96" loading="lazy">
+                <img src="/assets/images/LOGO-transparente.png" alt="Ràmaga Pró-Estética" width="213" height="96" loading="lazy">
             </a>
             <p>Ràmaga — Estética · Cursos · Tecnologia</p>
         </div>
