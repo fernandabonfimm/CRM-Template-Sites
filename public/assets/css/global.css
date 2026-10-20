@@ -1,0 +1,124 @@
+:root {
+    color-scheme: light;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+
+    --color-primary: #695e49;
+    --color-primary-hover: #514839;
+    --color-accent-lime: #d7db55;
+    --color-accent-teal: #2abdb2;
+    --color-accent-gold: #9d5727;
+    --color-black: #111111;
+    --color-gray-900: #242424;
+    --color-gray-700: #555555;
+    --color-gray-500: #858585;
+    --color-gray-300: #d6d6d4;
+    --color-gray-100: #f1f1ef;
+    --color-ink: var(--color-black);
+    --color-muted: var(--color-gray-700);
+    --color-background: #f8f8f6;
+    --color-surface: #ffffff;
+    --color-border: #e4e4e1;
+
+    --font-family-base: "Open Sans", Arial, sans-serif;
+    --font-family-display: "Cormorant Garamond", Georgia, serif;
+    --content-width: 1280px;
+    --radius-small: 4px;
+    --radius-large: 12px;
+    --shadow-soft: 0 16px 45px rgb(17 17 17 / 8%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-width: 320px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 92px;
+    background: var(--color-background);
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    color: var(--color-ink);
+    background: var(--color-background);
+    font-family: var(--font-family-base);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+a {
+    color: inherit;
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+:focus-visible {
+    outline: 3px solid var(--color-accent-teal);
+    outline-offset: 4px;
+}
+
+.section-shell {
+    width: min(calc(100% - 64px), var(--content-width));
+    margin-inline: auto;
+}
+
+.section-pad {
+    padding-block: clamp(76px, 10vw, 144px);
+}
+
+.skip-link {
+    position: fixed;
+    z-index: 2000;
+    top: 12px;
+    left: 12px;
+    padding: 12px 18px;
+    transform: translateY(-160%);
+    color: var(--color-surface);
+    background: var(--color-black);
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+@media (max-width: 700px) {
+    .section-shell {
+        width: min(calc(100% - 40px), var(--content-width));
+    }
+
+    html {
+        scroll-padding-top: 76px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
